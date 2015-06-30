@@ -1,0 +1,249 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two Column One Page Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (24/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro (The CV Inn)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont[Mapping=tex-text]{Times New Roman} % Main document font
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Calibri} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\sffamily\Huge Raymond W. Ko}\\ % Your name
+%{\color{headings}\fontspec[Variant = 2]{Vivaldi} Curriculum {Vit\fontspec[Variant = 3]{Vivaldi}\ae}\\[15pt]\par} % Curriculum vitae text in the Vivaldi font
+	
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+	
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience} 
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+
+{\raggedleft\textsc{Current, from Jan 2011}\par}
+
+{\raggedright\large Syandus Inc., Exton, PA\\
+\textit{Software Engineer}\\[5pt]}
+
+\normalsize{Created medical simulations, games, web sites, and metrics reports. Maintained internal game engine code base and servers.}\\
+
+\paragraph{Accomplishments}
+\begin{itemize}
+  \setlength\itemsep{0.0em}
+  \item Served as main programming lead in several medical simulations. Responsible for encoding medical knowledge from various scientists and doctors into simulations.
+  \item Programmed graphical and unit logic components of \\\href{http://immunequest.com}{ImmuneQuest}, a 3D game designed to teach students the basics of the human immune system.
+  \item Ported company Windows only 3D game engine to run on \\Mac OS X, iOS, Android, and Linux.
+  \item Integrated Lua scripting language support into our gaming engine to increase developer productivity compared to when C++ was the only available choice.
+  \item Created an internal software framework for informational group sessions with virtual patients.
+  \item Remade \href{http://syandus.com}{syandus.com} website from
+    a previously Flash only one to support mobile devices.
+\end{itemize}
+
+%------------------------------------------------
+% WORK EXPERIENCE 2
+%------------------------------------------------
+
+{\raggedleft\textsc{Sept. 2009 -- Dec. 2009}\par}
+
+{\raggedright\large University of Pennsylvania\\
+\textit{Teaching Assistant, Operating Systems}\\[5pt]}
+
+\normalsize{Marked test papers, graded semester projects of Linux shells written in C, and held office hours for answering student questions.}\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 3
+%------------------------------------------------
+
+{\raggedleft\textsc{Sept 2006 -- May 2010}\par}
+
+{\raggedright\large Penn College House Computing\\
+\textit{Senior Information Technology Assistant}\\[5pt]}
+
+\normalsize{Provided technical support for student computers. Troubleshooted cases that involved data recovery, full operating system reinstalls, hardware installation and replacement, malware removal, and 802.1X wireless network setup for new students.}\\
+
+%----------------------------------------------------------------------------------------	
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{c|p{7cm}}
+\raisebox{-4pt}{\textifsymbol{18}} & 911 Spring St, Philadelphia, PA 19107\\ % Address
+\raisebox{-3pt}{\Mobilefone} & +1 215 8057074 \\ % Phone number
+\raisebox{-1pt}{\Letter} & \href{raymond.w.ko@gmail.com}{raymond.w.ko@gmail.com} \\ % Email address
+%\Keyboard & \href{http://www.johnsmith.com}{http://www.johnsmith.com} \\ % Website
+\end{tabular}
+}
+}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+
+%------------------------------------------------
+% EDUCATION 1
+%------------------------------------------------
+
+  2006 -- 2010 & \textbf{Bachelor of Science in Engineering}\\
+& \textsc{Computer and Information Science} \\
+& \textit{University of Pennsylvania} 
+	
+%----------------------------------------------------------------------------------------
+
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+%\section{Awards} 
+
+%\begin{tabular}{rl}
+%2010	 & \textbf{Faculty of Science Masters Scholarship}\\
+%& \textit{The University of California}\\ \\
+
+%------------------------------------------------
+
+%2008	 & \textbf{Top Achiever Award -- Commerce}\\
+%& \textit{Business Association of California}
+%\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills} 
+
+\begin{tabular}{rl}
+Working Knowledge
+& C++, Lua\\ 
+& \\
+Basic Knowledge
+& Python, Clojure, Java, \\
+& \\
+& Bash shell scripting,\\
+& Windows BAT scripting,\\
+& \\
+& HTML, PHP, JavaScript, CSS, \\
+& \\
+& \LaTeX
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SIDE PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Side Projects}
+
+\normalsize{A full list of personal side projects available at \href{https://github.com/raymond-w-ko}{github.com/raymond-w-ko} and \href{https://bitbucket.org/rko}{bitbucket.org/rko}.}
+
+\paragraph{\href{https://github.com/raymond-w-ko/omegacomplete.vim}{omegacomplete}}
+\normalsize{A keyword completion plugin for the Vim text editor. Uses Python bindings to communicate with Vim and C++ to implement the algorithmic portions.} Multithreaded with background processing to scale with modern CPUs and avoid blocking. Supports various completion types, such as: prefix, title case, camel case, subsequence, closest edit distance, and keywords with underscore and hyphen separators.
+
+\paragraph{\href{https://github.com/raymond-w-ko/tsukuyomi}{tsukuyomi}}
+\normalsize{A Lisp heavily inspired by Clojure which is compiled down to Lua.}
+
+\paragraph{\href{https://bitbucket.org/rko/vim}{JVM bindings for Vim}}
+\normalsize{A highly experimental fork of the Vim text editor with JVM (Java Virtual Machine) bindings. This allows JVM hosted languages such as Clojure, Scala, and Groovy to be used inside Vim.}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
+
+%\section{Communication Skills} 
+
+%\begin{tabular}{rl}
+%\textsc{Conferences}
+%& Oral Presentation at the California \\
+%& Computer Science Conference -- 2010\\
+%& \\
+%\textsc{Posters}
+%& Poster at the Annual Programming \\
+%& Conference in Oregon -- 2009 \\
+%\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+	
+\end{minipage} % End right-hand side of the page
+
+\end{document}  
